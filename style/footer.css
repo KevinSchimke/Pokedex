@@ -1,0 +1,41 @@
+.footerMain{
+    min-height: 10vH;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 16px;
+}
+
+.footerIcons{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.footerIcons img{
+    margin: 8px 4px 8px 8px;
+}
+
+.footerIcons img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.footerLinks{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.footerLinks a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    margin: 8px 4px 16px 8px;
+}
+
+.footerLinks a:hover{
+    opacity: 0.5;
+    text-decoration: underline 1px solid white;
+}

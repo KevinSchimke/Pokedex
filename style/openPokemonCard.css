@@ -1,0 +1,157 @@
+.openPokemonCardMain{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.openPokemonCardSub{
+    width: 450px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.openPokemonCardTop{
+    border: 1px solid white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 35vh;
+    padding: 16px;
+}
+.openPokemonCardBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -10vh;
+    min-height: 50vh;
+    background-color: rgb(51, 51, 51);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.openPokemonCardPicture{
+    width: 100%;
+    height: 250px;
+}
+
+.openPokemonCardMenu{
+
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.openPokemonCardHeadline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.openPokemonCardHeadline img{
+    height: 36px;
+}
+
+.openPokemonCardMenuItems{
+    width: 25%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.openPokemonCardBaseStats{
+    display: flex;
+    justify-content: space-between;
+}
+
+.openPokemonCardInfoLine{
+    width: 30%;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.openPokemonCardInfoContent{
+    width: 70%;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.openPokemonCardBaseStats p{
+    padding: 16px 8px 16px 8px;
+    min-width: 30px;
+}
+
+.StatusBarMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+
+.StatusBarSub{
+    width: 250px;
+    height: 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.StatusBarDefault{
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    max-width: calc(100% - 2px) !important;
+}
+
+.openPokemonCardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.openPokemonCardInfo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.openPokemonCardTypes img{
+    height: 8vh;
+    object-fit: cover;
+}
+
+.openPokemonCardTypes p{
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.openPokemonCardInfo p {
+    margin: revert;
+}
+
+.openPokemonCardMenuItems:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.openPokemonCardHeadline img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}

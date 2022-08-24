@@ -1,0 +1,58 @@
+h1{
+    color: #FF7A4C;
+    font-size: 3em;
+    text-align: center;
+}
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.headerCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 45px ;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.headerMain{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e2643a;
+    padding: 4px;
+}
+
+.headerLeftImg{
+    display: flex;
+    align-items: flex-end;
+    padding-right: 16px;
+    padding-bottom: 16px;
+
+}
+
+.headerLeftImg img{
+    height: 150px;
+}
+
+.headerImgPokeball{
+    height: 75px !important;
+}
+
+.headerRightImg{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 16px;
+    padding-bottom: 16px;
+
+}
+
+.headerRightImg img{
+    height: 150px;
+}

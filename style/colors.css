@@ -1,0 +1,91 @@
+.pokemonCardBackground_Normal {
+    background-color: rgb(160,162,159);
+}
+
+.pokemonCardBackground_Fighting {
+    background-color: rgb(211,66,95);
+}
+
+.pokemonCardBackground_Flying {
+    background-color: rgb(161,187,236);
+}
+
+.pokemonCardBackground_Poison {
+    background-color: rgb(183,99,207);
+}
+
+.pokemonCardBackground_Ground {
+    background-color: rgb(218,124,77);
+}
+
+.pokemonCardBackground_Rock {
+    background-color: rgb(201,188,138);
+}
+
+.pokemonCardBackground_Bug {
+    background-color: rgb(146,189,45);
+}
+
+.pokemonCardBackground_Ghost {
+    background-color: rgb(95,109,188);
+}
+
+.pokemonCardBackground_Steel {
+    background-color: rgb(87,149,163);
+}
+
+.pokemonCardBackground_Fire {
+    background-color: rgb(251,166,76);
+}
+
+.pokemonCardBackground_Water {
+    background-color: rgb(83,157,223);
+}
+
+.pokemonCardBackground_Grass {
+    background-color: rgb(96,189,88);
+}
+
+.pokemonCardBackground_Electric {
+    background-color: rgb(242,217,78);
+}
+
+.pokemonCardBackground_Psychic {
+    background-color: rgb(250,133,130);
+}
+
+.pokemonCardBackground_Ice {
+    background-color: rgb(118,209,193);
+}
+
+.pokemonCardBackground_Dragon {
+    background-color: rgb(12,106,200);
+}
+
+.pokemonCardBackground_Dark {
+    background-color: rgb(89,87,97);
+}
+
+.pokemonCardBackground_Fairy {
+    background-color: rgb(239,144,230);
+}
+
+.pokemonCardBackground_Unknow {
+    background-color: rgb(255, 255, 255);
+}
+
+.pokemonCardBackground_Shadow {
+    background-color: rgb(89,87,97);
+}
+
+.StatusBarColorRed{
+    background-color: red;
+}
+
+.StatusBarColorOrange{
+    background-color: orange;
+}
+
+.StatusBarColorGreen{
+    background-color: green;
+}

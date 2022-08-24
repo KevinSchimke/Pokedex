@@ -1,0 +1,87 @@
+@media (max-width : 800px) {
+
+    h1{
+        font-size: 2em;
+    }
+    .headerLeftImg img{
+        height: 100px;
+    }
+
+    .headerRightImg{
+        padding-left: 8px;
+        padding-bottom: unset;
+    }
+
+    .headerLeftImg{
+        padding-right: 8px;
+        padding-bottom: unset;
+    }
+
+    .headerRightImg img{
+        height: 100px;
+    }
+    
+    .headerImgPokeball{
+        height: 40px !important;
+    }
+    .headerCenter{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media (max-width : 550px) {
+    h1{
+        font-size: 1.2em;
+    }
+    .headerRightImg img{
+        height: 70px;
+    }
+    .headerLeftImg img{
+        height: 70px;
+    }
+    .headerCenter{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .footerLinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width :450px){
+    .StatusBarSub{
+        width: 200px;
+    }
+}
+
+@media (max-width :400px) {
+    .StatusBarSub{
+        width: 150px;
+    }
+    .headerImgPokeball{
+        height: 25px !important;
+    }
+    .headerRightImg{
+        padding-left: 2px;
+    }
+    .headerLeftImg{
+        padding-right: 2px;
+    }
+}
+
+@media (max-width :350px) {
+    .StatusBarSub{
+        width: 120px;
+    }
+    .openPokemonCardMenuItems{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .openPokemonCardBottom{
+        padding: 2px;
+    }
+}

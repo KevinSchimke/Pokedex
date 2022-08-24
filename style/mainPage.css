@@ -1,0 +1,42 @@
+.img_Pokeball{
+    height: 250px;
+    object-fit: cover;
+    transition: -webkit-transform 1s;
+    margin-top: 32px;
+}
+
+.img_Pokeball:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.img_Camera{
+    height: 250px;
+    object-fit: cover;
+    transition: -webkit-transform 1s;
+    margin-bottom: 45px;
+}
+
+.img_Camera:hover{
+    transform: rotate(-360deg);
+    cursor: pointer;
+}
+
+.MainCategories{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.MainCategories div{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.SubCategories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
