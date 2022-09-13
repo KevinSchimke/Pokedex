@@ -1,6 +1,6 @@
 // Templates for pokemonCards.js
 
-function templatePokemonCard(id,formattedID,name,picture){
+function templatePokemonCard(id, formattedID, name, picture) {
     return/*html*/`
     <div class="pokecard" onclick="openPokemonCard(${id})" id="pokecard_Background${id}">
         <div class="pokecardOverlay">
@@ -15,7 +15,7 @@ function templatePokemonCard(id,formattedID,name,picture){
     `;
 }
 
-function templatePokemonCardTypes(id,index,type){
+function templatePokemonCardTypes(id, index, type) {
     return/*html*/`
     <div id="PokemonCardsType_${id}_${index}" class="items">${type}</div>
     `;
@@ -23,7 +23,7 @@ function templatePokemonCardTypes(id,index,type){
 
 // Templates for openPokemonCard.js
 
-function templateOpenPokemonCard(id,formattedID,name,picture){
+function templateOpenPokemonCard(id, formattedID, name, picture) {
     return/*html*/` 
     <div class="openPokemonCardSub">
         <div class="openPokemonCardTop" id="openPokemonCard_background">
@@ -36,9 +36,9 @@ function templateOpenPokemonCard(id,formattedID,name,picture){
         </div>
         <div class="openPokemonCardBottom">
             <div class="openPokemonCardMenu">
-                <div class="openPokemonCardMenuItems" onclick="renderOpenPokemonCardBaseStats(${id})">Base Stats</div>
-                <div class="openPokemonCardMenuItems" onclick="renderOpenPokemonCardInfos(${id})">Info</div>
-                <div class="openPokemonCardMenuItems" onclick="renderOpenPokemonCardTypes(${id})">Types</div>
+                <div class="openPokemonCardMenuItems" onclick="event.stopPropagation();renderOpenPokemonCardBaseStats(${id})">Base Stats</div>
+                <div class="openPokemonCardMenuItems" onclick="event.stopPropagation();renderOpenPokemonCardInfos(${id})">Info</div>
+                <div class="openPokemonCardMenuItems" onclick="event.stopPropagation();renderOpenPokemonCardTypes(${id})">Types</div>
             </div>
             <div class="openPokemonCardContainer" id="openPokemonCardContainer"></div>
         </div>
@@ -46,22 +46,22 @@ function templateOpenPokemonCard(id,formattedID,name,picture){
     `;
 }
 
-function templateOpenPokemonCardBaseStats(){
+function templateOpenPokemonCardBaseStats() {
     return/*html*/`
     <div class="openPokemonCardBaseStats">
         <div class="openPokemonCardInfoLine" id="StatusBarName"></div>
         <div class="openPokemonCardInfoContent" id="StatusBar"></div>
     </div>
-    `;    
+    `;
 }
 
-function templateStatusBarNames(StatusBarName){
+function templateStatusBarNames(StatusBarName) {
     return/*html*/`
     <p>${StatusBarName}</p>
     `;
 }
 
-function templateStatusBar(StatusBarValue,backgroundColor){
+function templateStatusBar(StatusBarValue, backgroundColor) {
     return/*html*/`
     <div class="StatusBarMain">
         <p>${StatusBarValue}</p>
@@ -72,7 +72,7 @@ function templateStatusBar(StatusBarValue,backgroundColor){
     `;
 }
 
-function templateOpenPokemonCardTypes(type){
+function templateOpenPokemonCardTypes(type) {
     return/*html*/`
     <div class="openPokemonCardTypes" style="margin-bottom: 16px">
         <p>${type}</p>
@@ -81,13 +81,13 @@ function templateOpenPokemonCardTypes(type){
     `;
 }
 
-function templateOpenPokemonCardHeadline(){
+function templateOpenPokemonCardHeadline() {
     return/*html*/`
     <h2>Types</h2>
     `;
 }
 
-function templateOpenPokemonCardInfos(weight,height){
+function templateOpenPokemonCardInfos(weight, height) {
     return/*html*/`
     <div class="openPokemonCardInfo">
         <div>    
@@ -103,7 +103,7 @@ function templateOpenPokemonCardInfos(weight,height){
     `;
 }
 
-function templateAbilities(ability){
+function templateAbilities(ability) {
     return/*html*/`
     <p>${ability}</p>
     `;
