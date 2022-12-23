@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(51, 51, 51);
     font-family: 'Times New Roman', sans-serif;
     margin: 0;
@@ -9,22 +9,22 @@ body{
     justify-content: space-between;
 }
 
-p{
+p {
     margin: 0;
 }
 
 
-h2 , h3{
+h2, h3 {
     margin: 0;
 }
 
-button{
+button {
     background-color: black;
     color: white;
     border-radius: 5px;
 }
 
-input{
+input {
     background-color: lightgray;
     color: black;
     border: none;
@@ -35,24 +35,20 @@ input{
     width: 10vw;
 }
 
-button:hover{
+button:hover {
     color: white;
     opacity: 0.7;
     cursor: pointer;
 }
 
-.d-none{
+.d-none {
     display: none !important;
 }
 
-.noFlowByOpenCard{
+.noFlowByOpenCard {
     overflow-y: hidden;
 }
 
-
-
-
-
-.df{
+.df {
     display: flex;
 }

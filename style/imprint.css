@@ -1,0 +1,19 @@
+.imprint_container {
+    padding: 50px;
+    margin-top: -20vh;
+}
+
+.imprint_container a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    margin: 8px 4px 16px 8px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    margin: 1rem 0;
+}
