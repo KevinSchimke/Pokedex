@@ -28,7 +28,7 @@ function templateOpenPokemonCard(id, formattedID, name, picture) {
     <div class="openPokemonCardSub">
         <div class="openPokemonCardTop" id="openPokemonCard_background">
             <div class="openPokemonCardHeadline">
-            <img src="icons/home.png" onclick="closePokemonCard()">
+            <img src="img/icons/home.png" onclick="closePokemonCard()">
             <h2>${formattedID} ${name}</h2>
             </div>
             <img class="openPokemonCardPicture" src="${picture}">
@@ -76,7 +76,7 @@ function templateOpenPokemonCardTypes(type) {
     return/*html*/`
     <div class="openPokemonCardTypes" style="margin-bottom: 16px">
         <p>${type}</p>
-        <img src="icons/typesIcons/${type}.svg">
+        <img src="img/icons/typesIcons/${type}.svg">
     </div>
     `;
 }
