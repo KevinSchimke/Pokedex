@@ -1,14 +1,19 @@
+let cuurentOpenPokemon = 0;
+let cardIsOpen = false;
+
 function clearPokemonCardContainer() {
     document.getElementById('openPokemonCardContainer').innerHTML = '';
 }
 
 async function openPokemonCard(pokemon_ID) {
+    cardIsOpen = true;
+    currentOpenPokemon = pokemon_ID;
     document.getElementById('openPokemonCard').classList.remove('d-none');
     document.getElementById('body').classList.add('noFlowByOpenCard');
     await loadOpenPokemonCardInfos(pokemon_ID);
 }
 
-async function loadOpenPokemonCardInfos(pokemon_ID){
+async function loadOpenPokemonCardInfos(pokemon_ID) {
     let responseAsJson = await loadFromServer(pokemon_ID);
     let id = responseAsJson['id'];
     let picture = responseAsJson['sprites']['other']['dream_world']['front_default'];
@@ -16,17 +21,17 @@ async function loadOpenPokemonCardInfos(pokemon_ID){
     let name = capitalizeFirstLetter(responseAsJson['name']);
     let background = capitalizeFirstLetter(responseAsJson['types'][0]['type']['name']);
 
-    renderOpenPokemonCard(id,formattedID,name,picture);
+    renderOpenPokemonCard(id, formattedID, name, picture);
     renderOpenPokemonCardBackground(background);
-    renderOpenPokemonCardBaseStats(id)
+    renderOpenPokemonCardBaseStats(id);
 }
 
-function renderOpenPokemonCardBackground(background){
+function renderOpenPokemonCardBackground(background) {
     document.getElementById('openPokemonCard_background').classList.add('pokemonCardBackground_' + background);
 }
 
-function renderOpenPokemonCard(id,formattedID,name,picture){
-    document.getElementById('openPokemonCard').innerHTML = templateOpenPokemonCard(id,formattedID,name,picture);
+function renderOpenPokemonCard(id, formattedID, name, picture) {
+    document.getElementById('openPokemonCard').innerHTML = templateOpenPokemonCard(id, formattedID, name, picture);
 }
 
 async function renderOpenPokemonCardBaseStats(pokemon_ID) {
@@ -49,9 +54,9 @@ async function renderPokemonBaseStatsWithStatusBar(pokemon_ID) {
 }
 
 function checkBackgroundColor(StatusBarValue) {
-    if (StatusBarValue < 45) {backgroundColor = 'StatusBarColorRed'} 
-    else if (StatusBarValue < 70) {backgroundColor = 'StatusBarColorOrange'} 
-    else if (StatusBarValue <= 100) {backgroundColor = 'StatusBarColorGreen'};
+    if (StatusBarValue < 45) { backgroundColor = 'StatusBarColorRed' }
+    else if (StatusBarValue < 70) { backgroundColor = 'StatusBarColorOrange' }
+    else if (StatusBarValue <= 100) { backgroundColor = 'StatusBarColorGreen' };
     return backgroundColor;
 }
 
@@ -60,7 +65,7 @@ function renderStatusBarNames(StatusBarName) {
 }
 
 function renderStatusBar(StatusBarValue, backgroundColor) {
-    document.getElementById('StatusBar').innerHTML += templateStatusBar(StatusBarValue,backgroundColor);
+    document.getElementById('StatusBar').innerHTML += templateStatusBar(StatusBarValue, backgroundColor);
 }
 
 async function renderOpenPokemonCardTypes(pokemon_ID) {
@@ -81,11 +86,11 @@ async function renderOpenPokemonCardInfos(pokemon_ID) {
     let height = responseAsJson['height'];
 
     clearPokemonCardContainer();
-    document.getElementById('openPokemonCardContainer').innerHTML += templateOpenPokemonCardInfos(weight,height);
+    document.getElementById('openPokemonCardContainer').innerHTML += templateOpenPokemonCardInfos(weight, height);
     renderAbilities(pokemon_ID);
 }
 
-async function renderAbilities(pokemon_ID){
+async function renderAbilities(pokemon_ID) {
     let responseAsJson = await loadFromServer(pokemon_ID);
     let abilities = responseAsJson['abilities'];
 
@@ -96,6 +101,29 @@ async function renderAbilities(pokemon_ID){
 }
 
 function closePokemonCard() {
+    cardIsOpen = false;
     document.getElementById('openPokemonCard').classList.add('d-none');
     document.getElementById('body').classList.remove('noFlowByOpenCard');
+}
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowRight") {
+        increasePokemonID();
+    } else if (event.key === "ArrowLeft") {
+        decreasePokemonID();
+    }
+});
+
+function increasePokemonID() {
+    if (currentOpenPokemon < allPokemons && cardIsOpen) {
+        currentOpenPokemon++;
+        openPokemonCard(currentOpenPokemon);
+    }
+}
+
+function decreasePokemonID() {
+    if (currentOpenPokemon > 1 && cardIsOpen) {
+        currentOpenPokemon--;
+        openPokemonCard(currentOpenPokemon);
+    }
 }
