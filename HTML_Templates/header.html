@@ -2,7 +2,9 @@
 
     <div class="headerLeft">
         <div class="headerLeftImg">
-            <img src="img/headerLeftImg.png">
+
+            <img class="headerImgPokemon headerImgPokemonLeft"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg">
             <img class="headerImgPokeball" src="img/pokeball.png">
         </div>
     </div>
@@ -10,12 +12,20 @@
     <div class="headerCenter">
         <h1>Pokemon Center</h1>
     </div>
-    
+
     <div class="headerRight">
         <div class="headerRightImg">
             <img class="headerImgPokeball" src="img/pokeball.png">
-            <img src="img/headerRightImg.png">
+            <img class="headerImgPokemon"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg">
         </div>
     </div>
 
+</div>
+
+<div class="headerSearch">
+    <div class="headerSearchBG">
+        <input min="1" max="151" type="number" id="input" placeholder="Pokedex ID eingeben">
+        <button type="button" onclick="findPokemon()">Suchen</button>
+    </div>
 </div>

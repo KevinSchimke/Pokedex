@@ -1,58 +1,66 @@
-h1{
+h1 {
     color: #FF7A4C;
     font-size: 3em;
     text-align: center;
 }
 
-.header{
+.header {
     position: relative;
     top: 0;
     left: 0;
     right: 0;
 }
 
-.headerCenter{
+.headerCenter {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
-    border-radius: 45px ;
+    border-radius: 45px;
     padding-left: 45px;
     padding-right: 45px;
 }
 
-.headerMain{
+.headerMain {
     display: flex;
     justify-content: space-between;
     background-color: #e2643a;
-    padding: 4px;
+    padding: 10px 30px 4px;
 }
 
-.headerLeftImg{
+.headerImgPokemonLeft {
+    transform: scaleX(-1);
+}
+
+.headerImgPokemon {
+    width: 125px;
+}
+
+.headerLeftImg {
     display: flex;
     align-items: flex-end;
-    padding-right: 16px;
+    padding-right: 32px;
     padding-bottom: 16px;
 
 }
 
-.headerLeftImg img{
+.headerLeftImg img {
     height: 150px;
 }
 
-.headerImgPokeball{
+.headerImgPokeball {
     height: 75px !important;
 }
 
-.headerRightImg{
+.headerRightImg {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     padding-left: 16px;
     padding-bottom: 16px;
-
+    gap: 16px !important;
 }
 
-.headerRightImg img{
+.headerRightImg img {
     height: 150px;
 }

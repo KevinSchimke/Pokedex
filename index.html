@@ -34,12 +34,7 @@
 
 <body id="body" onload="init()" onscroll="getScrollPosition()">
     <div class="header" HtmlTemplate="HTML_Templates/header.html"></div>
-    <div class="headerSearch">
-        <div class="headerSearchBG">
-            <input min="1" max="151" type="number" id="input" placeholder="Pokedex ID eingeben">
-            <button type="button" onclick="findPokemon()">Suchen</button>
-        </div>
-    </div>
+
     <div class="pokecardsMain" id="PokemonCards"></div>
     <div onclick="closePokemonCard()" class="openPokemonCardMain d-none" id="openPokemonCard"></div>
     <div HtmlTemplate="HTML_Templates/footer.html"></div>
