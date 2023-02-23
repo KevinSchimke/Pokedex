@@ -24,6 +24,7 @@ h1 {
 .headerMain {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #e2643a;
     padding: 10px 30px 4px;
 }

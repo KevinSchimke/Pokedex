@@ -1,50 +1,61 @@
 @media (max-width : 800px) {
 
-    h1{
+    h1 {
         font-size: 2em;
     }
-    .headerLeftImg img{
-        height: 100px;
-    }
 
-    .headerRightImg{
-        padding-left: 8px;
-        padding-bottom: unset;
-    }
-
-    .headerLeftImg{
-        padding-right: 8px;
-        padding-bottom: unset;
-    }
-
-    .headerRightImg img{
-        height: 100px;
-    }
-    
-    .headerImgPokeball{
+    .headerImgPokeball {
         height: 40px !important;
     }
-    .headerCenter{
+
+
+    .headerCenter {
         padding-left: 35px;
         padding-right: 35px;
     }
+
+    .headerImgPokemon {
+        height: 100px !important;
+    }
 }
 
-@media (max-width : 550px) {
-    h1{
+@media (max-width : 700px) {
+    .headerMain {
+        padding: 4px 10px;
+    }
+}
+
+@media (max-width : 650px) {
+    .headerImgPokemon {
+        height: 80px !important;
+    }
+
+    .headerLeftImg {
+        padding-bottom: unset;
+    }
+
+    .headerRightImg {
+        padding-bottom: unset;
+    }
+}
+
+
+
+@media (max-width : 620px) {
+    h1 {
         font-size: 1.2em;
     }
-    .headerRightImg img{
-        height: 70px;
+
+    .headerImgPokemon {
+        height: 70px !important;
     }
-    .headerLeftImg img{
-        height: 70px;
-    }
-    .headerCenter{
+
+    .headerCenter {
         padding-left: 25px;
         padding-right: 25px;
     }
-    .footerLinks{
+
+    .footerLinks {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -52,36 +63,51 @@
     }
 }
 
-@media (max-width :450px){
-    .StatusBarSub{
+@media (max-width :550px) {
+    .headerImgPokeball {
+        display: none;
+    }
+
+    .headerImgPokemon {
+        width: unset;
+    }
+}
+
+@media (max-width :450px) {
+    .StatusBarSub {
         width: 200px;
     }
 }
 
 @media (max-width :400px) {
-    .StatusBarSub{
+    .StatusBarSub {
         width: 150px;
     }
-    .headerImgPokeball{
+
+    .headerImgPokeball {
         height: 25px !important;
     }
-    .headerRightImg{
+
+    .headerRightImg {
         padding-left: 2px;
     }
-    .headerLeftImg{
+
+    .headerLeftImg {
         padding-right: 2px;
     }
 }
 
 @media (max-width :350px) {
-    .StatusBarSub{
+    .StatusBarSub {
         width: 120px;
     }
-    .openPokemonCardMenuItems{
+
+    .openPokemonCardMenuItems {
         margin-left: 4px;
         margin-right: 4px;
     }
-    .openPokemonCardBottom{
+
+    .openPokemonCardBottom {
         padding: 2px;
     }
 }
